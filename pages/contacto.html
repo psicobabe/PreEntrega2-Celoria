@@ -8,9 +8,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tinta Néctar Estudio</title>
+    <title>TNE- Contacto</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/faviconico.ico">
+    <link rel="shortcut icon" href="../img/faviconico.ico">
     <!-- Bootstrap link CSS en head-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -19,17 +19,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- estilo -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Poppins:wght@100&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
-
-
 
 <!-- inicio cuerpo -->
 
@@ -39,8 +31,8 @@
     <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #F1AD1F;">
         <div class="container-fluid">
             <!-- logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Tinta Néctar Estudio">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="Tinta Néctar Estudio">
             </a>
 
             <!-- toggler -->
@@ -55,10 +47,10 @@
 
                 <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/servicios.html">SERVICIOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/encontranos.html">ENCONTRANOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">CONTACTO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/servicios.html">SERVICIOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/encontranos.html">ENCONTRANOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
                 </ul>
 
             </div>
@@ -67,25 +59,45 @@
     </nav>
     <!-- fin barra de navegación fixed-->
 
+    <!-- Contacto -->
+    <section class="page-section" id="contact">
+        <div class="container p-5">
+            <br>
+            <h2 class="page-section-heading text-center">Contáctanos</h2>
 
-    <!-- cover img página de inicio -->
-    <div class="background min-vh-100 d-flex align-items-center">
-        <img src="img/fotos/fotoinicio1.jpg"
-            class="img-fluid d-block position-fixed top-50 start-50 translate-middle w-100 h-auto" alt="Mujer tatuando">
-        <!-- contenedor blanco con texto y botón -->
-        <div class="container">
+            <!-- Inicio Formulario-->
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <div class="bg-white rounded p-4">
-                        <h1>Tinta Néctar Estudio</h1>
-                        <p>En nuestro estudio de tatuajes y piercings creamos arte corporal personalizado para cada cliente. <br> Contáctanos para agendar tu próxima sesión.
-                        </p>
-                        <a href="https://wa.me/+543413720169" class="btn btn-dark">WHATSAPP</a>
-                    </div>
+                <div class="col-lg-8 col-xl-7">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" data-sb-validations="required" />
+                            <label for="name">Nombre completo</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" data-sb-validations="required,email">
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" data-sb-validations="required" />
+                            <label for="phone">Teléfono</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Mensaje</label>
+
+                            <!-- Botón -->
+                            <br>
+                            <button class="btn btn-dark" type="submit">ENVIAR</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer fijo en la parte inferior de la página -->
     <footer class="fixed-bottom bg-dark text-light py-2">
